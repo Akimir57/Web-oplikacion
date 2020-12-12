@@ -1,0 +1,23 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2 th:text=" ${question} + '?'"></h2>
+<form action="/answer1" method="post">
+    <div align="center">
+        <p><input name="answer1" type="radio" value="p" size="10">p</p>
+        <p><input name="answer1" type="radio" value="div" size="10">div</p>
+        <p><input name="answer1" type="radio" value="pre" size="10">pre</p>
+        <p><input name="answer1" type="radio" value="option" size="10">option</p>
+        <p><input name="answer1" type="radio" value="select" size="10">select</p>
+
+        <p><input type="submit" name="next"></p>
+    </div>
+</form>
+
+</div>
+</body>
+</html>
