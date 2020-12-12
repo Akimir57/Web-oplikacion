@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        a:hover {
+            color: red;
+            text-decoration: underline
+        }
+    </style>
+</head>
+
+<a href="#mytable"> перейти к таблице </a>
+
+<body>
+<h3 align="center"> Users</h3>
+<table border="1px" id="mytable">
+    <thead>
+    <tr>
+        <th><span style="color: #009879">Uuid</span></th>
+        <th><span style="color: chartreuse">Name</span></th>
+        <th>Password</th>
+        <th>login</th>
+        <th>email</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>r4390-1234-46534</td>
+        <td>Vladimir</td>
+        <td>qwerty</td>
+        <td>volodya96</td>
+        <td>uladzimir.lazicki@gmail.com</td>
+    </tr>
+
+    <tr>
+        <td>r4390-1234-46535</td>
+        <td>Petya</td>
+        <td>ytrewq</td>
+        <td>petya999</td>
+        <td>petya@gmail.com</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr bgcolor="#7fffd4">
+        <td colspan="5" align="center">Average</td>
+    </tr>
+    </tfoot>
+</table>
+
+<form method="post" action="/authorization">
+    <div>
+        <input type="email" name="email" placeholder="qwerty@gmail.com">
+    </div>
+    <div>
+        <input type="password" name="password" placeholder="не менее 8 символов">
+    </div>
+
+    <input type="submit" value="sign in">
+
+</form>
+
+</body>
+</html>
